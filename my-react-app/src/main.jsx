@@ -6,10 +6,12 @@ import Layout from "./components/Layout";
 import Dashboard from "./pages/dashboard";
 import Tasks from "./pages/tasks";
 import Settings from "./pages/settings";
-import './App.css' 
+import './index.css' 
+import { ThemeProvider } from "./context/ThemeProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+  <ThemeProvider>
     <BrowserRouter>
     <Layout>
       <Routes>
@@ -22,5 +24,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      
     </Layout>
     </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );

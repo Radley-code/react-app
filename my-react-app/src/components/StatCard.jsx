@@ -5,7 +5,7 @@ function StatCard( { label, value }) {
 
 
         <div style={ {
-            border: "2px solid #e63131",
+            border: "5px solid #e63131",
             borderRadius: "100px",
             padding: "5rem",
             marginBottom: "0.5rem",
